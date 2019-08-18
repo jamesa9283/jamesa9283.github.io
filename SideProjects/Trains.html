@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Project - Trains</title>
+    <link rel="stylesheet" type="text/css" href="./resources/css/styleSP.css"/>
+    <link rel="stylesheet" type="text/css" href="./resources/css/headerSP.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+  </head>
+  <header>
+      <h1>
+	<ul>
+	  <li id="JASites"><a href="../index.html">JASites</a></li>
+	  <li><a href="Maths.html">Maths</a></li>
+	  <li><a href="Trains.html">Trains</a></li>
+	  <li><a href="Parkrun.html">Parkrun</a></li>
+	  <li><a href="Maker.html">Digital Maker</a></li>
+          <li><a href="Blog.html">Blog</a></li>
+	</ul>
+      </h1>
+  </header>
+  <body>
+    <h1> Trains </h1>
+    <p> I am a self pronounced train addict. After a trip to London on a HST and only having been on a train once before, I was hooked. I was happy to see the introduction of the IET Class 800s and sad to see the end of the Pacers. Before I knew it I was mourning the loss of Arriva Trains Wales, Ave Arriva! What could this project possibly be? Well some people challenge themselves to go to every station in the UK. With my best friend a little before summer 2018 we set off to do that very thing. Every station in the UK, visited by us in some time in the future! We set ourselves the following rules:</p>
+    <ol>
+      <li> To say we visited a station we must:
+	<ul> 
+	  <li> Be on a train that stops at the station </li>
+	  <li> Touch the platform </li>
+          <li> Take a photograph of the station sign </li>
+	  <li> (Optional due to short platforms) Run between the carriage doors (My Job) </li>
+	</ul>
+     </li>
+     <li> We are allowed to use public transport (other than trains), to arrive or leave a station, but not both. We must arrive or leave on a train. </li>
+     <li> We are allowed to use parlimentary trains, aslong as validly tick off the station. </li>
+    </ol> 
+    <p id="StationNo"></p>
+    <span id="dots"></span>
+ 
+    <button onclick="More()" id="MoreBtn">Show Station List</button>
+    <span id="more">
+    <table id="Stations">
+    <tr>
+    <th> Station No. </th>
+    <th> Station Name </th>
+    <th> Date </th>
+    </tr>
+     <tr>  
+       <th> 1 </th>
+       <td> London Paddington </td>
+       <td> 05/12/2016 </td>
+     </tr>
+     <tr>  
+       <th> 1a </th>
+       <td> Notting Hill Gate (tube) </td>
+       <td> 05/12/2016 </td>
+     </tr>
+     <tr>  
+       <th> 1c </th>
+       <td> Queensway </td>
+       <td> 05/12/2016 </td>
+     </tr>
+     <tr>  
+       <th> 2 </th>
+       <td> Bath Spa </td>
+       <td> 31/05/2018 </td>
+     </tr> 
+     <tr>  
+       <th> 3 </th>
+       <td> Cathays </td>
+       <td> 19/12/2018 </td>
+     </tr>
+     <tr>  
+       <th> 4 </th>
+       <td> Llandaf </td>
+       <td> 19/12/2018 </td>
+     </tr>
+     <tr>  
+       <th> 5 </th>
+       <td> Radyr </td>
+       <td> 19/12/2018 </td>
+     </tr>
+     <tr>  
+       <th> 6 </th>
+       <td> Taffs Well </td>
+       <td> 19/12/2018 </td>
+     </tr>
+     <tr>  
+       <th> 7 </th>
+       <td> Treforest </td>
+       <td> 19/12/2018 </td>
+     </tr>
+     <tr>  
+       <th> 8 </th>
+       <td> Pontypridd </td>
+       <td> 19/12/2018 </td>
+     </tr>
+     <tr>  
+       <th> 9 </th>
+       <td> Trehafod </td>
+       <td> 19/12/2018 </td>
+     </tr>
+     <tr>  
+       <th> 10 </th>
+       <td> Porth </td>
+       <td> 19/12/2018 </td>
+     </tr>
+     <tr>  
+       <th> 11 </th>
+       <td> Dinas Rhondda </td>
+       <td> 19/12/2018 </td>
+     </tr>
+     <tr>  
+       <th> 12 </th>
+       <td> Tonypandy </td>
+       <td> 19/12/2018 </td>
+     </tr>
+     <tr>  
+       <th> 13 </th>
+       <td> Llwynypia </td>
+       <td> 19/12/2018 </td>
+     </tr>
+     <tr>  
+       <th> 14 </th>
+       <td> Ystrad Rhondda </td>
+       <td> 19/12/2018 </td>
+     </tr>
+     <tr>  
+       <th> 15 </th>
+       <td> Ton Pentre </td>
+       <td> 19/12/2018 </td>
+     </tr>
+     <tr>  
+       <th> 16 </th>
+       <td> Treorchy </td>
+       <td> 19/12/2018 </td>
+     </tr>
+     <tr>  
+       <th> 17 </th>
+       <td> Ynyswen </td>
+       <td> 19/12/2018 </td>
+     </tr>
+     <tr>  
+       <th> 18 </th>
+       <td> Treherbert </td>
+       <td> 19/12/2018 </td>
+     </tr>
+     <tr>  
+       <th> 19 </th>
+       <td> Abercynon </td>
+       <td> 19/12/2018 </td>
+     </tr>
+     <tr>  
+       <th> 20 </th>
+       <td> Quakers Yard </td>
+       <td> 19/12/2018 </td>
+     </tr>
+     <tr>  
+       <th> 21 </th>
+       <td>  Merthyr Vale</td>
+       <td> 19/12/2018 </td>
+     </tr>
+     <tr>  
+       <th> 22 </th>
+       <td> Troed-y-Rhiw </td>
+       <td> 19/12/2018 </td>
+     </tr>
+     <tr>  
+       <th> 23 </th>
+       <td> Pentre-bach </td>
+       <td> 19/12/2018 </td>
+     </tr>
+     <tr>
+       <th> 24 </th>
+       <td> Merthyr Tydfil </td>
+       <td> 19/12/2018 </td>
+     </tr>
+     <tr>
+       <th> 25 </th>
+       <td> Nantgarw (Treforest Estate) </td>
+       <td> 19/12/2018 </td>
+     </tr>
+     <tr>
+       <th> 26 </th>
+       <td> Cardiff Bay </td>
+       <td> 19/12/2018 </td>
+     </tr>
+     <tr>
+       <th> 27 </th>
+       <td> Bridgend </td>
+       <td> 19/12/2018 </td>
+     </tr>
+     <tr>
+       <th> 28 </th>
+       <td> Port Talbot Parkway </td>
+       <td> 19/12/2018 </td>
+     </tr>
+     <tr>
+       <th> 29 </th>
+       <td> Neath </td>
+       <td> 29/12/2018 </td>
+     </tr>
+     <tr>
+       <th> 30 </th>
+       <td> Heath High Level </td>
+       <td> 29/12/2018 </td>
+     </tr>
+     <tr>
+       <th> 31 </th>
+       <td> Llanishen </td>
+       <td> 29/12/2018 </td>
+     </tr>
+     <tr>
+       <th> 32 </th>
+       <td> Lisvane & Thornhill </td>
+       <td> 29/12/2018 </td>
+     </tr>
+     <tr>
+       <th> 33 </th>
+       <td> Caerphilly </td>
+       <td> 29/12/2018 </td>
+     </tr>
+     <tr>
+       <th> 34 </th>
+       <td> Aber </td>
+       <td> 29/12/2018 </td>
+     </tr>
+     <tr>
+       <th> 35 </th>
+       <td> Energlyn & Churchill Park </td>
+       <td> 29/12/2018 </td>
+     </tr>
+     <tr>
+       <th> 36 </th>
+       <td> Llanbradach </td>
+       <td> 29/12/2018 </td>
+     </tr>
+     <tr>
+       <th> 37 </th>
+       <td> Ystrad Mynach </td>
+       <td> 29/12/2018 </td>
+     </tr>
+     <tr>
+       <th> 38 </th>
+       <td> Hengoed </td>
+       <td> 29/12/2018 </td>
+     </tr>
+     <tr>
+       <th> 39 </th>
+       <td> Pengham </td>
+       <td> 29/12/2018 </td>
+     </tr>
+     <tr>
+       <th> 40 </th>
+       <td> Bargoed </td>
+       <td> 29/12/2018 </td>
+     </tr>
+     <tr>
+       <th> 41 </th>
+       <td> Brithdir </td>
+       <td> 29/12/2018 </td>
+     </tr>
+     <tr>
+       <th> 42 </th>
+       <td> Tir-Phil </td>
+       <td> 29/12/2018 </td>
+     </tr>
+     <tr>
+       <th> 43 </th>
+       <td> Pontlottyn </td>
+       <td> 29/12/2018 </td>
+     </tr>
+     <tr>
+       <th> 44 </th>
+       <td> Rhymney </td>
+       <td> 29/12/2018 </td>
+     </tr>
+     <tr>
+       <th> 45 </th>
+       <td> *Running footsteps* Heath Low Level </td>
+       <td> 29/12/2018 </td>
+     </tr>
+     <tr>
+       <th> 46 </th>
+       <td> Gowerton </td>
+       <td> 19/04/2019 </td>
+     </tr>
+     <tr>
+       <th> 47 </th>
+       <td> Llaneli </td>
+       <td> 29/12/2018 </td>
+     </tr>
+     <tr>
+       <th> 48 </th>
+       <td> Llangennech </td>
+       <td> 19/04/2019 </td>
+     </tr>
+     <tr>
+       <th> 49 </th>
+       <td> Pontarddulais </td>
+       <td> 19/04/2019 </td>
+     </tr>
+     <tr>
+       <th> 50 </th>
+       <td> Pantyffynnon </td>
+       <td> 19/04/2019 </td>
+     </tr>
+     <tr>
+       <th> 51 </th>
+       <td> Ammanford </td>
+       <td> 19/04/2019 </td>
+     </tr>
+     <tr>
+       <th> 52 </th>
+       <td> Llandybie </td>
+       <td> 19/04/2019 </td>
+     </tr>
+     <tr>
+       <th> 53 </th>
+       <td> Llandeilo </td>
+       <td> 19/04/2019 </td>
+     </tr>
+       <th> 54 </th>
+       <td> Llangadog </td>
+       <td> 19/04/2019 </td>
+     </tr>
+       <th> 55 </th>
+       <td> Llanwrda </td>
+       <td> 19/04/2019 </td>
+     </tr>
+       <th> 56 </th>
+       <td> Llandovery </td>
+       <td> 19/04/2019 </td>
+     </tr>
+       <th> 57 </th>
+       <td> Cynghordy </td>
+       <td> 19/04/2019 </td>
+     </tr>
+       <th> 58 </th>
+       <td> <strong>Sugar Loaf</strong> </td>
+       <td> 19/04/2019 </td>
+     </tr>
+       <th> 59 </th>
+       <td> Llanwrtyd Wells </td>
+       <td> 19/04/2019 </td>
+     </tr>
+       <th> 60 </th>
+       <td> Llangammarch Wells </td>
+       <td> 19/04/2019 </td>
+     </tr>
+       <th> 61 </th>
+       <td> Builth Road </td>
+       <td> 19/04/2019 </td>
+     </tr>
+       <th> 62 </th>
+       <td> Llandrindod </td>
+       <td> 19/04/2019 </td>
+     </tr>
+       <th> 63 </th>
+       <td> Dolau </td>
+       <td> 19/04/2019 </td>
+     </tr>
+       <th> 64 </th>
+       <td> Knucklas </td>
+       <td> 19/04/2019 </td>
+     </tr>
+       <th> 65 </th>
+       <td> Knighton </td>
+       <td> 19/04/2019 </td>
+     </tr>
+       <th> 66 </th>
+       <td> Bucknell </td>
+       <td> 19/04/2019 </td>
+     </tr>
+       <th> 67 </th>
+       <td> Shrewsbury </td>
+       <td> 19/04/2019 </td>
+     </tr>
+       <th> 68 </th>
+       <td> Church Stretton </td>
+       <td> 19/04/2019 </td>
+     </tr>
+       <th> 69 </th>
+       <td> Craven Arms </td>
+       <td> 19/04/2019 </td>
+     </tr>
+       <th> 70 </th>
+       <td> Ludlow </td>
+       <td> 19/04/2019 </td>
+     </tr>
+       <th> 71 </th>
+       <td> Leominster </td>
+       <td> 19/04/2019 </td>
+     </tr>
+       <th> 72 </th>
+       <td> Hereford </td>
+       <td> 19/04/2019 </td>
+     </tr>
+       <th> 73 </th>
+       <td> Abergavenny </td>
+       <td> 19/04/2019 </td>
+     </tr>
+       <th> 74 </th>
+       <td> Pontypool & New Inn </td>
+       <td> 19/04/2019 </td>
+     </tr>
+       <th> 75 </th>
+       <td> Cwnbr&acirc;n </td>
+       <td> 19/04/2019 </td>
+     </tr>
+       <th> 76 </th>
+       <td> Pontyclun </td>
+       <td> 19/04/2019 </td>
+     </tr>
+       <th> 77 </th>
+       <td> Llanharan </td>
+       <td> 19/04/2019 </td>
+     </tr>
+       <th> 78 </th>
+       <td> Pencoed </td>
+       <td> 19/04/2019 </td>
+     </tr>
+       <th> 79 </th>
+       <td> Pyle </td>
+       <td> 19/04/2019 </td>
+     </tr>
+       <th> 80 </th>
+       <td> Baglan </td>
+       <td> 19/04/2019 </td>
+     </tr>
+       <th> 81 </th>
+       <td> Briton Ferry </td>
+       <td> 19/04/2019 </td>
+     </tr>
+       <th> 82 </th>
+       <td> Skewen </td>
+       <td> 19/04/2019 </td>
+     </tr>
+       <th> 83 </th>
+       <td> Llansamlet </td>
+       <td> 19/04/2019 </td>
+     </tr>
+    </table>
+    </span>
+
+    <script>
+function More() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("MoreBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Show Station List"; 
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Hide Station List"; 
+    moreText.style.display = "inline";
+  }
+}
+</script>
+<script>
+function StationNumber() {
+  var x =document.getElementById("Stations").rows.length;
+    return "We have visited " + x + " stations";
+}
+document.getElementById("StationNo").innerHTML = StationNumber();
+
+    </script>
+
+  </body>
+</html>

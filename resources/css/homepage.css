@@ -1,0 +1,24 @@
+body {
+  margin: 0 auto;
+  padding:0;
+  background-repeat: no-repeat;
+}
+
+.trans {
+  width: 1500px;
+  height: 700px;
+  display: block;
+  position: relative;
+}
+
+.trans::after {
+  content: "";
+  background: url(Banner.jpg);
+  background-size: 1500px auto;
+  opacity: 0.3;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute; 
+}

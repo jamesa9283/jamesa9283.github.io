@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Project - Mathematical Programming</title>
+    <link rel="stylesheet" type="text/css" href="./resources/css/styleSP.css"/>
+    <link rel="stylesheet" type="text/css" href="./resources/css/headerSP.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+
+  </head>
+  <header>
+      <h1>
+	<ul>
+	  <li id="JASites"><a href="../index.html">JASites</a></li>
+	  <li><a href="Maths.html">Maths</a></li>
+	  <li><a href="Trains.html">Trains</a></li>
+	  <li><a href="Parkrun.html">Parkrun</a></li>
+	  <li><a href="Maker.html">Digital Maker</a></li>
+          <li><a href="Blog.html">Blog</a></li>
+	</ul>
+      </h1>
+  </header>
+  <body>
+    <h1> Maths </h1>
+    <p> Mathematics is usually something to just pass and get on with for most people, I am not most people. I see mathematics as an art form to be perfected and used to create beautiful pieces of art. One of these being LaTe&chi; proofs, or beautifully crafted integrals that yield neat results, or mathematical coding. </p> 
+    <h2> Mathematical Coding </h2>
+      <div>
+      <p class="right"> I call myself a mathematical programmer, what is a mathematical progammer? <br> A mathematical programmer is a person that uses programming to solve mathematical problems, i.e. Mathematica. <br> What I do is sometimes the other way around but I enjoy the use of my programming skills and my passion for mathematics together.<br> As with my websites my Raspberry Pi is the workhorse of my mathematical escapades, when a plain fountain pen and paper wont do. I have a couple of projects I am working on at the moment, one a short term project, the other a longer term project, both engrained into mathematics. <br> </p>
+<iframe id="canvas_frame" class="preview-frame" aria-label="sketch output" role="main" frameborder="0" title="sketch output" sandbox="allow-scripts allow-pointer-lock allow-same-origin allow-popups allow-forms allow-modals" srcdoc="<!DOCTYPE HTML>
+<html><head>
+    <script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/p5.min.js&quot; crossorigin=&quot;&quot;></script>
+    <script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/addons/p5.dom.min.js&quot; crossorigin=&quot;&quot;></script>
+    <script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/addons/p5.sound.min.js&quot; crossorigin=&quot;&quot;></script>
+    
+    <meta charset=&quot;utf-8&quot;>
+
+  <base href=&quot;https://editor.p5js.org/jamesa9283/sketches/rkDQZ6d-N/&quot;><script src=&quot;/previewScripts.js&quot;></script><script>
+    function getScriptOff(line) {
+      var offs = [[55,&quot;sketch&quot;]];
+      var l = 0;
+      var file = '';
+      for (var i=0; i<offs.length; i++) {
+        var n = offs[i][0];
+        if (n < line &amp;&amp; n > l) {
+          l = n;
+          file = offs[i][1];
+        }
+      }
+      return [line - l, file];
+    }
+    // catch reference errors, via http://stackoverflow.com/a/12747364/2994108
+    window.onerror = function (msg, url, lineNumber, columnNo, error) {
+        var string = msg.toLowerCase();
+        var substring = &quot;script error&quot;;
+        var data = {};
+        if (url.match(/^(http:\/\/|https:\/\/)/) !== null &amp;&amp; error.stack){
+          var errorNum = error.stack.split('about:srcdoc:')[1].split(':')[0];
+          var fileInfo = getScriptOff(errorNum);
+          data = msg + ' (' + fileInfo[1] + ': line ' + fileInfo[0] + ')';
+        } else {
+          var fileInfo = getScriptOff(lineNumber);
+          data = msg + ' (' + fileInfo[1] + ': line ' + fileInfo[0] + ')';
+        }
+        window.parent.postMessage([{
+          log: [{
+            method: 'error',
+            data: [data],
+            id: Date.now().toString()
+          }],
+          source: fileInfo[1]
+        }], '*');
+      return false;
+    };
+  </script></head>
+  <body>
+    <script data-tag=&quot;@fs-sketch.js&quot;>// Convergence Animation of Square Tooth Fourier Series
+// James Arthur
+//
+// Fourier Series
+// Daniel Shiffman
+// https://thecodingtrain.com/CodingChallenges/125-fourier-series.html
+// https://youtu.be/Mm2eYfj0SgA
+
+let time = 0;
+let wave = [];
+let path = [];
+let k = 2;
+
+function setup() {
+	createCanvas(600, 400);
+}
+
+function draw() {
+	background(0);
+	translate(150, 200);
+
+	let x = 0;
+	let y = 0;
+
+	for (let i = 0; i < k; i++) {
+		let prevx = x;
+		let prevy = y;
+
+		let n = i * 2 + 1;
+		let radius = 75 * (4 / (n * PI));
+		x += radius * cos(n * time);
+		y += radius * sin(n * time);
+
+		stroke(255, 100);
+		noFill();
+		ellipse(prevx, prevy, radius * 2);
+
+		//fill(255);
+		stroke(255);
+		line(prevx, prevy, x, y);
+		//ellipse(x, y, 8);
+	}
+	wave.unshift(y);
+
+
+	translate(200, 0);
+	line(x - 200, y, 0, wave[0]);
+	beginShape();
+	noFill();
+	for (let i = 0; i < wave.length; i++) {
+		vertex(i, wave[i]);
+	}
+	endShape();
+
+	time += 0.05;
+
+
+	if (wave.length > 250) {
+		wave.pop();
+		k = k + 0.01;
+	}
+}</script>
+  
+
+</body></html>"></iframe>
+  </div>
+  <div>
+  <p> I offer up my services for commisions of mathematical occurances or objects. If theres something you need an animation for, I can code it and you can use it, for a small fee. If you need something, please get in touch at: <a href="mailto:jamesarthur7@icloud.com" class="hyp">jamesarthur7@icloud.com</a></p>
+  </div>
+  <div>
+  <h3> Project List</h3>
+  <table class="Array">
+    <tr>
+      <th> </th>
+      <th> Project Name </th>
+      <th> Project Area </th>
+    </tr>
+    <tr>
+      <th> 1 </th>
+      <td><a href="./Projects/MathsProgram/Priestley.html" class="proj" target="_blank"> Online Accompanyment to Priestley's Complex Analysis</a></th>
+      <td> Complex Analysis </td> 
+   </tr>
+    <tr>
+      <th> 2 </th>
+      <td><a href="./Projects/MathsProgram/AirPol.html" class="proj" target="_blank"> Statistical Analysis of Air Pollution Data</a></th>
+      <td> Statistical Methods </td> 
+   </tr>
+  </table>
+  </div>
+  <h2> Mathematical Excursions </h2>
+  <p> Every year I attempt to go on an excursion of some kind to bring forward my mathematical skill in some way, I will usually go for a week or two to improve and reflect on my mathematical improvement over the past year. Some of my Mathematical excursions have included: A Lecture series at Oxford University on the Millenium Problems, The 60<sup>th</sup> International Mathematical Olympiad and the Annual Maths Jam Gathering.<br> I will attempt to write a blog post about any of these excursions I go on, they can be found <a href="Blog.html" class="hyp">here</a>!</p>
+  <h2> My Papers </h2>
+  <p> Sometimes if I find an exceptionally neat result or something takes my interest and I think its worth showing I will write up a paper on a topic. Here are my current papers: </p>
+  <table class="Array">
+    <tr>
+      <th> </th>
+      <th> Paper Name </th>
+      <th> Paper Area </th>
+    </tr>
+    <tr>
+      <th> 1 </th>
+      <td><a href="https://drive.google.com/file/u/1/d/1eN0mkSc5x8C47Ad1wBVKJ-va1q9O6e7B/view?usp=sharing" class="proj" target="_blank"> Amicable Numbers - A Jaunt into Problem Papers</a></th>
+      <td> Number Theory </td> 
+   </tr>
+    <tr>
+      <th> 2 </th>
+      <td><a href="https://drive.google.com/file/d/182GSkomnLDqO6twiPDEXGRX24YeG9hXQ/view?usp=sharing" class="proj" target="_blank"> A Proof of L'H&ocirc;ptial's Rule</a></th>
+      <td> Analysis </td> 
+   </tr>
+    <tr>
+      <th> 3 </th>
+      <td><a href="https://drive.google.com/file/u/1/d/1sb7Mw7O6_En-PSiJynpFfbPMKsD0js5z/view?usp=sharing" class="proj" target="_blank"> A Research Study into Time Reversibility</a></th>
+      <td> Fluid Dynamics </td> 
+   </tr>
+  </table>
+  <h2> Online Tutoring </h2>
+  <p> I also offer Mathematics tutoring for GCSE/A-level (including Further Maths and GCSE Science/GCSE Latin/AS Physics/A-level Chemistry), I am an ethusiastic A* student, every student will recieve a tailored session on any topic they desire over an online classroom. They will also get a problem set to take away and try and I would be more than happy to go through the solutions. I also take on Olympiad students. For me information, <a href="../ContactMe.html" class="hyp" target="_blank">contact me</a> on my business site. 
+  </body>
+</html>

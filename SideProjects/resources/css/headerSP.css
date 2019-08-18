@@ -1,0 +1,54 @@
+
+header ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  width: 100%;
+  background-color: rgba(103,129,144,1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index:5;
+}
+
+header li {
+  float: left;
+}
+
+header li a {
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  font-family: Raleway;
+}
+
+/* Change the link color to green on hover */
+header li a:hover {
+  color: rgba(105,254,50,1);
+}
+
+header a {
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  font-family: Raleway;
+  color: rgba(0,0,0, 0.7);
+  text-size: 30px;
+}
+
+
+footer h6 {
+  font-family: Raleway;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  text-size: 7px;
+}
+
+a {
+  text-decoration: none; !important
+}
+
+
