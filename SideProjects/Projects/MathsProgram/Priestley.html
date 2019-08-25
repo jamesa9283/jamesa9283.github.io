@@ -7,6 +7,33 @@
 
   </head>
   <body>
-    <h1> Currently under construction </h1>
+  <div id="project">
+    <h1> An electronic accompanyment to Priestley's Introduction to Complex Analysis </h1>
+      <h6> Date Published: 07/08/2019 </h6>
+      <p> I want to collect together bits of code together to create an electronic accompanyment to Priestley's Complex Analysis. </p>
+      <h2> Argand Diagrams </h2>
+      <p> In order to show complex numbers graphically, I need a way to plot argand diagrams. Part of this involved a polar plotter that I coded, the code can be found on my github, as with all my code.  </p>
+      <p> Next came the issue of plotting the argand diagrams, this was possibly done in a couple of ways</p>
+      <ol>  
+	<li> Use a program to identify the type of argand equation it was 
+	  <ul>
+	    <li> This would probably require some sort of machine learning program in order for it to work </li>
+	  </ul>
+	</li>
+	<li> Input every point in the complex plane in order to show a depiction of the graph.
+	  <ul> 
+	    <li> This would be very time consuming and inefficient </li>
+	    <li> This would only provide a picture and would be no good for integration later in the project </li>
+	  </ul>
+	</li>
+	<li> Create a tree shaped program to rearrange the argand diagram into polar form</li>
+	  <ul>
+	    <li> This is what I have decided to do, as I can use it for integration and it should be efficient enough. </li> 
+	  </ul>
+      </ol>
+      <p> Now, this opens another can of worms. How does one code an algebra engine, to be perfectly honest with you, I have no idea but that isnt going to stop me. I think its time to employ TDD! The first test is nothing, so it fails. The next test is to get Linear equations to work.</p>
+      <h6> Update as of: 13/08/2019 </h6>
+      <p> Now, the program can solve Linear equations, the next test is to make solve a system of Quadratics and Linear equations by substitutions. <a href="https://github.com/jamesa9283/AlgebraEngine/blob/master/functions%20%232.py" class="hyp" target="_blank">You can find the code here</a> </p>
+  </div>
   </body>
 </html>
