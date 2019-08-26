@@ -2,20 +2,44 @@
 <html>
   <head>
     <title>Blog</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+    <link rel="manifest" href="../site.webmanifest">
+    <link rel="mask-icon" href="../safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
     <link rel="stylesheet" type="text/css" href="./resources/css/styleSP.css"/>
     <link rel="stylesheet" type="text/css" href="./resources/css/headerSP.css"/>
     <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
   </head>
   <header>
       <h1>
-	<ul>
-	  <li id="JASites"><a href="../index.html">JASites</a></li>
-	  <li><a href="Maths.html">Maths</a></li>
-	  <li><a href="Trains.html">Trains</a></li>
-	  <li><a href="Parkrun.html">Parkrun</a></li>
-	  <li><a href="Maker.html">Digital Maker</a></li>
-          <li><a href="Blog.html">Blog</a></li>
-	</ul>
+	<div class="navbar">
+	  <a href="../index.html">JASites</a>
+	  <div class="dropdown">
+	    <button class="dropbtn"><strong>Projects</strong> 
+	      <i class="fa fa-caret-down"></i>
+	    </button>
+	    <div class="dropdown-content">
+	      <a href="./Maths.html">Mathematical Coding</a>
+  	      <a href="./Maker.html" id="hide">Digital Maker</a>
+	    </div>
+	  </div> 
+	  <a href="./Trains.html">Trains</a>
+	  <a href="./Parkrun.html">Parkrun</a>
+	  <a href="./Blog.html">Blog</a>
+	  <div class="dropdown">
+	    <button class="dropbtn"><strong>Games Dev</strong> 
+	      <i class="fa fa-caret-down"></i>
+	    </button>
+	    <div class="dropdown-content">
+	      <a href="./GameDev/Y1/T1.html">Year 1: Term 1</a>
+  	      <a href="./GameDev/Y1/T2.html" id="hide">Year 1: Term 2</a>
+	      <a href="./GameDev/Y2/T1.html" id="hide">Year 2: Term 1</a>
+	    </div>
+	  </div> 
+	</div>
       </h1>
   </header>
   <body>
