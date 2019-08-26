@@ -3,11 +3,16 @@ body {
 }
 
 img {
-  position: absolute;
-  width: 45%;
-  right: 0%;
+  width: 50%;
+  float: right;
+  margin: 2%;
 }
 
 .half {
   width: 50%
+}
+
+.simple {
+  list-style-type: none;
+  font-family: Raleway;
 }
