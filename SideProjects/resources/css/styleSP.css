@@ -35,7 +35,7 @@ a.hyp {
 }  
 
 table th, td,
-p, td td, th th, th th th, td td td {
+p {
   font-family: Raleway;
   color: rgb(42, 55, 69);
   font-size: 1.5em;
@@ -119,3 +119,6 @@ h6 {
   background-color: rgba(105,254,50,0.4); 
 }
 
+.size {
+  font-size: 1.5em;
+}
