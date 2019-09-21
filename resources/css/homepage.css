@@ -14,7 +14,7 @@ body {
 .trans::after {
   content: "";
   background-image: url(Banner.jpg);
-  background-size: 100vw 100vh;
+  background-size: 100vw;
   background-repeat: no-repeat;
   opacity: 0.3;
   top: 0;
