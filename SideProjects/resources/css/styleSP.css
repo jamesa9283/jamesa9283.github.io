@@ -45,7 +45,7 @@ strong {
   color: rgba(105,254,50,1); 
 }
 
-th, td {
+th,td {
   padding 30px 0px;
   margin 30px 0;
   padding: 15px;
@@ -63,6 +63,10 @@ th, td {
 
 #hidden {
   visibility: hidden;
+}
+
+#hide {
+  display: none;
 }
 
 ol, ul {
@@ -119,6 +123,6 @@ h6 {
   background-color: rgba(105,254,50,0.4); 
 }
 
-.size {
-  font-size: 1.5em;
+.spacing {
+  padding: 3vh 0 0 0;
 }
