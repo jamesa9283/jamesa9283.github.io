@@ -21,7 +21,7 @@ header li a {
   text-align: center;
   padding: 3vh 2vw;
   font-family: Raleway;
-  font-size: 5vh;
+  font-size: 2vh;
 }
 
 /* Change the link color to green on hover */
@@ -36,7 +36,7 @@ header a {
   padding: 3vh 2vw;
   font-family: Raleway;
   color: rgba(0,0,0, 0.7);
-  text-size: 7vh;
+  text-size: 2vw;
 }
 
 
