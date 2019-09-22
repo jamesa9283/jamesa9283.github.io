@@ -62,3 +62,7 @@ th,td {
 #hidden {
   visibility: hidden;
 }
+
+.100 {
+  width: 100%;
+}
