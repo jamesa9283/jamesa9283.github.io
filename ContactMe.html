@@ -11,28 +11,31 @@
     <meta name="theme-color" content="#ffffff">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <link rel="stylesheet" type="text/css" href="./resources/css/style.css"/>
-    <link rel="stylesheet" type="text/css" href="./resources/css/header.css" media="screen and (min-width:900px)"/>
-    <link rel="stylesheet" type="text/css" href="./resources/css/mobileheader.css" media="screen and (max-width:900px)"/>
+	<link rel="stylesheet" type="text/css" href="./resources/css/header.css" />
+    <link rel="stylesheet" type="text/css" href="./resources/css/footerwide.css" media="screen and (min-width:900px)"/>
+    <link rel="stylesheet" type="text/css" href="./resources/css/footermob.css" media="screen and (max-width:900px)"/>
     <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
   </head>
-  <header>
-      <h1>
-	<ul>
-	  <li><a href="index.html">Home</a></li>
-	  <li><a href="AboutMe.html">About</a></li>
-	  <li><a href="Pricing.html">Pricing</a></li>
-	  <li><a href="SideProjects.html">Side Projects</a></li>
-	  <li><a href="ContactMe.html">Contact Me</a></li>
-	</ul>
-      </h1>
-  </header>
   <body>
+      <h1>
+<div class="topnav" id="myTopnav">
+	  <a href="index.html">Home</a>
+	  <a href="AboutMe.html">About</a>
+	  <a href="Pricing.html">Pricing</a>
+	  <a href="SideProjects.html">Side Projects</a>
+	  <a href="ContactMe.html" class = "active">Contact Me</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+     <img src="./resources/photos/BigArrow.png" alt="Arrow" width= 70% id="down"/>
+	 <img src="./resources/photos/BigArrowUp.png" alt="Arrow" width= 70% id = "up"/>
+  </a>
+</div>
+    </h1>
     <h1>Contact Me</h1>
     <p> There are several ways of contacting me or seeing more of my work.</p>
     <table>
     <tr>
       <th> Email: </th>
-      <td> <a href="mailto:jsitesonline@gmail.com" class="hyp">jsitesonline@gmail.com </td> 
+      <td> <a href="mailto:jsitesonline@gmail.com" class="hyp">JSitesOnline@gmail.com </td> 
     </tr>
     <tr>
       <th> Telephone: </th>
@@ -43,5 +46,47 @@
       <td> <a href="https://www.github.com/jamesa9283" class="hyp">jamesa9283</a> </td>
     </tr>
     </table>
+	<br><br>
+	<script>
+/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+
   </body>
+
+    <footer id="footer"> 
+	  <em>
+	  <table>
+	<tbody>
+	<tr>
+	<td>
+	  JASites<br><br>
+	  Founded by James Arthur<br>
+	  For Website enquiries: <a href="mailto:JSitesOnline@gmail.com" class = "hypf">JSitesOnline@gmail.com</a><br>
+	  For Maths Enquiries: <a href="mailto:Jamesarthur7@icloud.com" class = "hypf">Jamesarthur7@icloud.com</a><br>
+	  <br><br>
+	</td>
+	<td>
+		<div class = mess>We do websites of all sizes and for every company you can name,<br> if you have any queries please get in touch. <br><br>	-James A</div>
+	</td>
+	<td>
+	  <a href="index.html" class = "hypn">Home</a><br>
+	  <a href="AboutMe.html" class = "hypn">About</a><br>
+	  <a href="Pricing.html" class = "hypn">Pricing</a><br>
+	  <a href="SideProjects.html" class = "hypn">Side Projects</a><br>
+	  <a href="ContactMe.html" class = "hypn">Contact Me</a><br>
+	</td>
+	</tr>
+	</tbody>
+	</table>
+	</em>
+  </footer>
+
 </html>

@@ -1,7 +1,11 @@
-
 body {
   margin: 0 auto;
-  padding:0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 7vw;
+  margin: 0 0;
 }
 
 .trans {
@@ -29,25 +33,31 @@ body {
   font-size: 3vh;
 }
 
-.scrollBtn {
-  width: 12vh;
-  height: 12vh;
+#scrollBtn {
+  width: 8vh;
+  height: 8vh;
   background-color: rgba(105,254,50,0.7);
   z-index: 0;
   position: fixed;
   bottom: 0;
   right: 0;
   border-radius: 10vh;
-  padding: 1vh 1vh;
+  padding: 1.5vh 1.5vh;
   margin: 2vh 2vh;
+  display: block;
 }
 
-.scrollBtn img {
-  height: 10vh;
+#scrollBtn{
+  display: block;
+}
+
+#scrollBtn img {
+  height: 100%;
 }
 
 p {
-  padding: 0 5vh 10vh 5vh;
+  padding: 0 5vh 0 5vh;
+  font-size: 2vw;
 }
 
 h2 {
@@ -56,17 +66,31 @@ h2 {
 }
 
 .box{
-  width: 100%;
+  width: 25%;
   height: 12.5vw;
-  background-color: rgba(103,129,144,0.5);
+  background-color: rgba(103,129,144,0.4);
   text-align: center;
-  padding: 8vw 0;
-  display: block;
-  font-size: 2vh;
-  color: black;
+  padding: 2% 2%;
+  display: inline-block;
+  font-size: 5vh;
   box-shadow: 2px 2px 1px #D3D3D3;
-  font-color: rgba(105,254,50,0.7);
-  margin: 8vh 0;
+  color: rgba(105,254,50,0.7);
   border-radius: 1em;
   overflow: hidden;
+  margin: 2% 2%;
+}
+
+.btitle {
+  vertical-align: middle;
+}
+
+.binfo {
+  display: none;
+}
+
+footer td {
+  color: white;
+  padding: 1vh;
+  font-size: 1.5vw;
+  margin: 0 1vh;
 }

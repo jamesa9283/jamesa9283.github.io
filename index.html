@@ -4,21 +4,24 @@
     <title>JASites</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <link rel="stylesheet" type="text/css" href="./resources/css/style.css"/>
-    <link rel="stylesheet" type="text/css" href="./resources/css/header.css" media="screen and (min-width:900px)"/>
-    <link rel="stylesheet" type="text/css" href="./resources/css/mobileheader.css" media="screen and (max-width:900px)"/>
+    <link rel="stylesheet" type="text/css" href="./resources/css/header.css" />
     <link rel="stylesheet" type="text/css" href="./resources/css/mobilehomepage.css" media="screen and (max-width:900px)"/>
     <link rel="stylesheet" type="text/css" href="./resources/css/widehomepage.css" media="screen and (min-width:900px)"/>
     <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
   </head>
-  <header>
+    <body>
       <h1>
-	<ul>
-	  <li><a href="index.html">Home</a></li>
-	  <li><a href="AboutMe.html">About</a></li>
-	  <li><a href="Pricing.html">Pricing</a></li>
-	  <li><a href="SideProjects.html">Side Projects</a></li>
-	  <li><a href="ContactMe.html">Contact Me</a></li>
-	</ul>
+<div class="topnav" id="myTopnav">
+	  <a href="index.html" class = "active">Home</a>
+	  <a href="AboutMe.html">About</a>
+	  <a href="Pricing.html">Pricing</a>
+	  <a href="SideProjects.html">Side Projects</a>
+	  <a href="ContactMe.html">Contact Me</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+     <img src="./resources/photos/BigArrow.png" alt="Arrow" width= 70% id="down"/>
+	 <img src="./resources/photos/BigArrowUp.png" alt="Arrow" width= 70% id = "up"/>
+  </a>
+</div>
       </h1>
       <div class="trans">
       <div class="center">
@@ -27,28 +30,79 @@
 	</h1>
     </div>
     </div>
-  </header>
-  <body>
-    <div class="noOverlap">
       <p> We are a Web Developent firm set in the heart of Cornwall. We deliver reasonably priced, quick and professional bespoke Websites. We work with all of the standard practices, aswell as agile development. We deliver the whole package; front end, back end and anything else your heart desires.
-    </div>
-    <a href="#footer"><div class="scrollBtn">
-      <img src="./resources/photos/bigarrow.png" alt="Arrow"/>
+    </div><br>
+	<p> Here are some handy links to the most visited parts of the site: </p>
+    <a href="#footer"><div id="scrollBtn" onclick = "showOrHide()">
+      <img src="./resources/photos/BigArrow1.png" alt="Arrow"/>
     </div></a>
       <a href="./SideProjects/Blog.html"><div class="box">
-      <h2> Blog </h2>
-      <p> Hear about what myself and the company is up to!</p>
+      <span><h2> Blog </h2></span>
+      <p class = "binfo"> Hear about what myself and the company is up to!</p>
       </div></a>
       <a href="./Pricing.html"><div class="box">
-        <h2> Prices </h2>
-        <p> See how cheaply you can have your own bespoke website from us</p>
+        <span><h2> Prices </h2></span>
+        <p class = "binfo"> See how cheaply you can have your own bespoke website from us</p>
       </div></a>
       <a href="./SideProjects/Maths.html"><div class="box">
-        <h2> Maths </h2>
-        <p> Find out about my other passion</p>
-      </div>
-  <body>
-  <footer> 
-    <p id="footer"> </p>
+        <span><h2> Maths </h2></span>
+        <p class = "binfo"> Find out about my other passion</p>
+      </div></a>	  
+	  <img src = "./resources/photos/UKBTA19FinalistBadge.jpg" alt = "Finalist Badge" class = "badge"/>
+	  
+<script>
+/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+<script>
+var scrollBtn = document.getElementById('scrollBtn');
+
+function showDiv() {
+  scrollBtn.style.display = "block";
+}
+
+function closeDiv() {
+  scrollBtn.style.display = "none";
+}
+
+function showOrHide() {
+	closeDiv();
+}
+</script>
+
+  </body>
+  <footer id="footer"> 
+	  <em>
+	  <table>
+	<tbody>
+	<tr>
+	<td>
+	  JASites<br><br>
+	  Founded by James Arthur<br>
+	  For Website enquiries: <a href="mailto:JSitesOnline@gmail.com" class = "hypf">JSitesOnline@gmail.com</a><br>
+	  For Maths Enquiries: <a href="mailto:Jamesarthur7@icloud.com" class = "hypf">Jamesarthur7@icloud.com</a><br>
+	  <br><br>
+	</td>
+	<td>
+		<div class = mess>We do websites of all sizes and for every company you can name,<br> if you have any queries please get in touch. <br><br>	-James A</div>
+	</td>
+	<td>
+	  <a href="index.html" class = "hypn">Home</a><br>
+	  <a href="AboutMe.html" class = "hypn">About</a><br>
+	  <a href="Pricing.html" class = "hypn">Pricing</a><br>
+	  <a href="SideProjects.html" class = "hypn">Side Projects</a><br>
+	  <a href="ContactMe.html" class = "hypn">Contact Me</a><br>
+	</td>
+	</tr>
+	</tbody>
+	</table>
+	</em>
   </footer>
 </html>

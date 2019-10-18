@@ -11,26 +11,70 @@
     <meta name="theme-color" content="#ffffff">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <link rel="stylesheet" type="text/css" href="./resources/css/style.css"/>
-    <link rel="stylesheet" type="text/css" href="./resources/css/header.css" media="screen and (min-width:900px)"/>
-    <link rel="stylesheet" type="text/css" href="./resources/css/mobileheader.css" media="screen and (max-width:900px)"/>
+    <link rel="stylesheet" type="text/css" href="./resources/css/header.css" />
+	<link rel="stylesheet" type="text/css" href="./resources/css/footerwide.css" media="screen and (min-width:900px)"/>
+    <link rel="stylesheet" type="text/css" href="./resources/css/footermob.css" media="screen and (max-width:900px)"/>
     <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
   </head>
-  <header>
+  <body>
       <h1>
-	<ul>
-	  <li><a href="index.html">Home</a></li>
-	  <li><a href="AboutMe.html">About</a></li>
-	  <li><a href="Pricing.html">Pricing</a></li>
-	  <li><a href="SideProjects.html">Side Projects</a></li>
-	  <li><a href="ContactMe.html">Contact Me</a></li>
-	</ul>
-      </h1>
-  </header>
-  <body>  
+<div class="topnav" id="myTopnav">
+	  <a href="index.html">Home</a>
+	  <a href="AboutMe.html" class = "active">About</a>
+	  <a href="Pricing.html">Pricing</a>
+	  <a href="SideProjects.html">Side Projects</a>
+	  <a href="ContactMe.html">Contact Me</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+     <img src="./resources/photos/BigArrow.png" alt="Arrow" width= 70% id="down"/>
+	 <img src="./resources/photos/BigArrowUp.png" alt="Arrow" width= 70% id = "up"/>
+  </a>
+</div>
+    </h1>  
     <h1> About Me! </h1>
     <p> I'm James, if you havent got that already, I do alot of programming and Maths and sometimes I chuck them together and get double the fun (NB! fun is additive here). <br></p>
     <div>
     <img src="./resources/photos/Profile.jpg" alt="Picture of myself outside Somerville College, Oxford chapel" width=40% class="float"/>
     <p> I started my travels into the computing sector when I was 14, starting an IT GCSE with intentions of making the best project the teacher had ever seen, well that was pretty easy, so I said; "lets do it in a year!", thats when it all started. I did the GCSE in a year and attained an A, along with my Maths GCSE (A*). Then I had lessons to fill, no work to do, until I was told of the AS level, so I started and I worked all summer long on my AS level project until there was no project left, or very little. Well, I wasnt just going to setttle for half an A-level, if its going to be done, you might aswell complete the whole thing, so I did. I did the whole A-level in a year. In between this polava of my GCSEs and an A-level, I attained a Raspberry Pi, this would soon become my main computer, chucking my laptop aside. Why would you code on a laptop when you can code on a Raspberry Pi, I ask you? Well I understand there are many reasons for using a laptop, but the passion I have for my little board is burning and thats what I use. Everything I code is in a Raspberry Pi. So all my websites are coded on a Raspberry Pi in a text editor, it mades things simple and I dont have to worry about a big clunky programme refusing to work. My javascript is also done in a text editor but I usually run it on the p5.js website. I keep all of my mathematical code in p5.js or JavaScript, its easier that way as then I can easily implement it into my website. For more information about other things I do in my spare time, check out my <a href="./SideProjects.html" class="hyp">side projects</a> page; slight warning its a rabbit hole in there!</p>   </div>
+    <br><br><br><br><br><br>
+  	<script>
+/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+  
   </body>
+      <footer id="footer"> 
+	  <em>
+	  <table>
+	<tbody>
+	<tr>
+	<td>
+	  JASites<br><br>
+	  Founded by James Arthur<br>
+	  For Website enquiries: <a href="mailto:JSitesOnline@gmail.com" class = "hypf">JSitesOnline@gmail.com</a><br>
+	  For Maths Enquiries: <a href="mailto:Jamesarthur7@icloud.com" class = "hypf">Jamesarthur7@icloud.com</a><br>
+	  <br><br>
+	</td>
+	<td>
+		<div class = mess>We do websites of all sizes and for every company you can name,<br> if you have any queries please get in touch. <br><br>	-James A</div>
+	</td>
+	<td>
+	  <a href="index.html" class = "hypn">Home</a><br>
+	  <a href="AboutMe.html" class = "hypn">About</a><br>
+	  <a href="Pricing.html" class = "hypn">Pricing</a><br>
+	  <a href="SideProjects.html" class = "hypn">Side Projects</a><br>
+	  <a href="ContactMe.html" class = "hypn">Contact Me</a><br>
+	</td>
+	</tr>
+	</tbody>
+	</table>
+	</em>
+  </footer>
+
 </html>

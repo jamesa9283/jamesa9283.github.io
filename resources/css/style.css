@@ -1,9 +1,9 @@
 body {
   background-color: rgba(51,49,51, 0.3);
+  font-family: Raleway;
 }
 
 .center {
-  font-family: Raleway;
   width: 100%;
   text-align: center;
   z-index: 4;
@@ -12,14 +12,23 @@ body {
   opacity: 0.8;
 }
 
-h1 {
-  font-family: Raleway;
-}
-
 a.hyp {
   border-bottom-style: solid;
   border-color: rgba(105, 254, 50, 0.5);
   color: rgb(42, 55, 69);
+}
+a.hypf {
+  border-bottom-style: solid;
+  border-color: rgba(105, 254, 50, 0.5);
+  color: rgb(255, 255, 255);
+}
+a.hypn {
+  border-color: rgba(105, 254, 50, 0.1);
+  border-bottom-style: solid;
+  color: rgb(255, 255, 255);
+}
+a.hypn:hover {
+  border-color: rgba(105, 254, 50, 0.5);
 }
 
 #intro {
@@ -28,13 +37,11 @@ a.hyp {
   top: 35%;
   left: 5%;
   width: 50%;
-  font-family: Raleway;
   color(51, 38, 31);
 }  
 
 table th, td,
 p {
-  font-family: Raleway;
   color: rgb(42, 55, 69);
   font-size: 1.5em;
 }
@@ -55,7 +62,6 @@ th,td {
 }
 
 .right {
-  width: 50%;
   float: right;
 }
 
@@ -70,4 +76,21 @@ th,td {
 .float {
   float: left;
   margin: 1vh 1vw;
+}
+
+footer{
+  background-color: black;
+}
+
+footer table{
+  margin: 0 0;
+}
+
+.badge {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 15%;
+  padding: 1vh 0;
+}
 }
