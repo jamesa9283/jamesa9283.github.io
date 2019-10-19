@@ -93,4 +93,7 @@ footer table{
   width: 15%;
   padding: 1vh 0;
 }
+
+.over {
+  overflow-x: auto;
 }
