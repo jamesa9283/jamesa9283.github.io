@@ -12,6 +12,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <link rel="stylesheet" type="text/css" href="./resources/css/style.css"/>
 	<link rel="stylesheet" type="text/css" href="./resources/css/header.css" />
+	<link rel="stylesheet" type="text/css" href="./resources/css/contactme.css" />
     <link rel="stylesheet" type="text/css" href="./resources/css/footerwide.css" media="screen and (min-width:900px)"/>
     <link rel="stylesheet" type="text/css" href="./resources/css/footermob.css" media="screen and (max-width:900px)"/>
     <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
@@ -27,26 +28,61 @@
   <a href="javascript:void(0);" class="icon" onclick="myFunction()">
      <img src="./resources/photos/bigarrow.png" alt="Arrow" width= 70% id="down"/>
   </a>
+</div>    </h1>
+    <h1 class = "spacing">Contact Me</h1>
+	<div class="container">
+  <div style="text-align:center">
+    <h2>Contact Us</h2>
+    <p>Let's discuss your new website, send us a message:</p>
+  </div>
+  <div class="row">
+    <div class="column">
+      <img src="./resources/photos/ContactMePhoto.jpg" style="width:100%">
+    </div>
+    <div class="column">
+      <form action="mailto:JSitesOnline@gmail.com?subject=My New Website" method="post" enctype="text/plain">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your First Name..">
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your Last Name..">
+		<input type="text" id="email" name="email" placeholder="Your Email..">
+        <label for="subject">Message</label>
+        <textarea id="subject" name="subject" placeholder="Your Message.." style="height:170px"></textarea>
+        <input type="submit" value="Send">
+      </form>
+    </div>
+  </div>
 </div>
-    </h1>
-    <h1>Contact Me</h1>
-    <p> There are several ways of contacting me or seeing more of my work.</p>
-    <table>
-    <tr>
-      <th> Email: </th>
-      <td> <a href="mailto:jsitesonline@gmail.com" class="hyp">JSitesOnline@gmail.com </td> 
-    </tr>
-    <tr>
-      <th> Telephone: </th>
-      <td> 07853953324 </td>
-    </tr> 
-    <tr>
-      <th> Github: </th>
-      <td> <a href="https://www.github.com/jamesa9283" class="hyp">jamesa9283</a> </td>
-    </tr>
-    </table>
-	<br><br>
-	<script>
+
+<div class="row1">
+  <a href="https://www.github.com/jamesa9283" class="hyp">
+  <div class="column1">
+    <div class="card">
+      <p><i class="fa fa-user"></i></p>
+      <h3>Github</h3>
+      <p>jamesa9283</p>
+    </div>
+  </div></a>
+
+  <div class="column1">
+    <div class="card">
+      <p><i class="fa fa-check"></i></p>
+      <h3>Phone</h3>
+      <p>07853953324</p>
+    </div>
+  </div>
+
+  <div class="column1">
+    <div class="card">
+      <p><i class="fa fa-smile-o"></i></p>
+      <h3>Email</h3>
+      <p>JSitesOnline@gmail.com</p>
+	</div>
+  </div>
+</div>
+
+
+<script>
 /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
 function myFunction() {
   var x = document.getElementById("myTopnav");

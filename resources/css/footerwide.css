@@ -8,9 +8,9 @@ html, body {
 footer {
   display: table-row;
   height: 0;
+  background-color: rgba(119, 136, 153, 1);
 }
 
 footer td{
-  background-color: black;
   color: white;
 }

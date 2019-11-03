@@ -5,7 +5,7 @@
   overflow: hidden;
   margin: 0 0;
   position: fixed;
-  background-color: grey;
+  background-color: rgba(119, 136, 153, 1);
   width: 100%
 }
 

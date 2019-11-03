@@ -1,5 +1,5 @@
 body {
-  margin: 0 auto;
+  margin: 2vw auto;
   padding: 0;
 }
 
@@ -47,8 +47,8 @@ h2 {
 
 .box{
   width: 25%;
-  height: 12.5vw;
-  background-color: rgba(103,129,144,0.4);
+  height: 10vw;
+  background-color: rgba(119, 136, 153, 1);
   text-align: center;
   padding: 2% 2%;
   display: inline-block;
@@ -57,7 +57,7 @@ h2 {
   color: rgba(105,254,50,0.7);
   border-radius: 1em;
   overflow: hidden;
-  margin: 2% 2%;
+  margin: 0 2%;
 }
 
 .btitle {
@@ -73,4 +73,8 @@ footer td {
   padding: 1vh;
   font-size: 1.5vw;
   margin: 0 1vh;
+}
+
+.main {
+  width: 80%;
 }
