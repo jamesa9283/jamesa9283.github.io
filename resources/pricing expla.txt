@@ -1,0 +1,61 @@
+
+	  <div class="over">
+      <table class="100">
+        <tr> 
+          <div> 
+          <td> </td>
+          <th colspan="6" id="center"> Number of pages</th>
+        </tr>
+       <tr> 
+         <th> </th>
+         <th> 1 </th>
+         <th> 2 </th>
+         <th> 3 </th> 
+         <th> 4-5 </th>
+         <th> 5-7 </th>
+         <th> 7+ </th>
+       </tr>
+       <tr>
+         <td> Website Creation </td>
+         <td> £50 </td>
+         <td> £75 </td>
+         <td> £100 </td>
+         <td> £125 </td>
+         <td> £200 </td>
+         <td> £300+ </td>
+       </tr>
+       <tr>
+         <td>Website Modernisation</td>
+         <td> £35 </td>
+         <td> £55 </td>
+         <td> £70 </td>
+         <td> £90 </td>
+         <td> £140 </td>
+         <td> £210+ </td>
+       </tr>
+       <tr>
+         <td> Website Maintenance [per month]</td>
+         <td> £30 </td>
+         <td> £60 </td>
+         <td> £80 </td>
+         <td> £100 </td>
+         <td> £120 </td>
+         <td> £150+ </td>
+       </tr>
+      </table>
+      </div>
+      <div class="over">
+      <table>
+      <tr>
+      <th>Creation:</th>
+      <td> The prices above include the following features: A navigation bar, text, tables, graphics implementation (graphics provided by customer), headers, footers, fonts available freely i.e. under Google fonts, backgrounds and CSS for all. Any additional features will be subject to discussion with myself in the project sketch sheet and through correspondance. Hosting is also not included in these fees, nor is any domain, this will also require further discussion. </td>
+      </tr>
+      <tr>
+      <th>Modernisation:</th>
+      <td> The prices above include <strong>only the CSS</strong> for the features above. Any HTML editing will require an additional cost of £10 per page ontop of the price in the table above.  </td>
+      </tr>
+      <tr>
+         <th> Maintenance: </th>
+         <td> The fee for this is <strong>per month</strong>; it can be paid in advance for a set number of months or paid monthly. It includes any updates the website may need to keep up to date with new versions of browsers and devices, or if a new HTML standard is released. All my projects are in HTML 5, which is the current standard. If any additional features are included in the website (features not listed above) a supplimentary maintenance fee may be included, i.e. if PHP is used for a database in the site. </td>
+      </tr>
+      </table>
