@@ -1,6 +1,16 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  display: table;
+}
+
+footer {
+  display: table-row;
+  height: 0;
+}
+
 footer td{
+  background-color: black;
   color: white;
-  padding: 1vw;
-  font-size: 3vh;
-  margin: 0 0;
 }

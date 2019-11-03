@@ -4,6 +4,9 @@
   color: rgba(51,49,51, 0.3);
   overflow: hidden;
   margin: 0 0;
+  position: fixed;
+  background-color: grey;
+  width: 100%
 }
 
 /* Style the links inside the navigation bar */

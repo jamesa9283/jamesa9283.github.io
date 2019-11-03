@@ -8,26 +8,6 @@ h1 {
   margin: 0 0;
 }
 
-.trans {
-  width: 100vw;
-  height: 100vh;
-  display: block;
-  position: relative;
-}
-
-.trans::after {
-  content: "";
-  background-image: url(Banner.jpg);
-  background-size: 100vw;
-  background-repeat: no-repeat;
-  opacity: 0.3;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  position: absolute; 
-}
-
 .noOverlap {
   display: block;
   font-size: 3vh;
