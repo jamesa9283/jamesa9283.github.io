@@ -1,5 +1,6 @@
-body {
-  background-color: rgba(220, 198, 224, 0.7);
+.back {
+  background-color: rgba(220, 198, 224, 1);
+  width: 80%;
 }
 
 img {
@@ -15,4 +16,23 @@ img {
 .simple {
   list-style-type: none;
   font-family: Raleway;
+}
+
+.ParallaxVideo{ 
+    height: 300px;
+    padding-bottom: 50px;
+    padding-top: 50px; 
+}
+.ParallaxVideo video{ 
+  width: 100%;
+  position: fixed;
+  top:0;
+  z-index: -999;
+}
+.ParallaxVideo h1 {
+  color: #fff;
+  font-size: 76px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
 }
