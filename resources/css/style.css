@@ -87,11 +87,11 @@ footer table{
 }
 
 .badge {
+  width: 15%;
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 15%;
-  padding: 1vh 0;
+  padding: 17vh 0 0 0;
 }
 
 .over {

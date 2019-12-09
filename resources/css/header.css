@@ -6,7 +6,8 @@
   margin: 0 0;
   position: fixed;
   background-color: rgba(119, 136, 153, 1);
-  width: 100%
+  width: 100%;
+  z-index: 1000;
 }
 
 /* Style the links inside the navigation bar */
