@@ -52,3 +52,20 @@ body {
 #myMenu li a:hover {
   background-color: #eee;
 }
+
+.img {
+  margin: 0 0;
+  padding: 2% 2%;
+  width: 20%;
+}
+
+hr {
+  display: block;
+  margin-top: 1vh;
+  margin-bottom: 1vh;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: inset;
+  border-width: 1px;
+  border-style: solid;
+}
