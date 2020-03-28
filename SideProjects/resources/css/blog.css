@@ -106,7 +106,39 @@ body {
 }
 
 img {
-    display: block;
+  display: block;
   margin-left: auto;
   margin-right: auto;
+}
+
+figure {
+  display: inline-block;
+  text-align: center;
+  margin: 5px; /* adjust as needed */
+}
+figure img {
+  vertical-align: top;
+}
+
+a.hyp {
+  border-bottom-style: solid;
+  border-color: rgba(105, 254, 50, 0.5);
+  color: rgb(42, 55, 69);
+}
+a.hypf {
+  border-bottom-style: solid;
+  border-color: rgba(105, 254, 50, 0.5);
+  color: rgb(255, 255, 255);
+}
+a.hypn {
+  border-color: rgba(105, 254, 50, 0.1);
+  border-bottom-style: solid;
+  color: rgb(255, 255, 255);
+}
+a.hypn:hover {
+  border-color: rgba(105, 254, 50, 0.5);
+}
+
+.green{
+	backgroundcolor: rgba(105, 254, 50, 0.5);
 }
